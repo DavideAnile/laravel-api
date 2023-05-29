@@ -1,0 +1,48 @@
+@import '~bootstrap/scss/bootstrap';
+
+.my-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.logo{
+    height: 70px;
+
+    img{
+        height: 100%;
+    }
+}
+   
+
+.admin{
+    background-image: url('https://e0.pxfuel.com/wallpapers/161/954/desktop-wallpaper-space-awesome-high-resolution-ultra-galaxy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+main{
+    background-color: white;
+}
+
+
+.my-container{
+    border-radius: 20px;
+    background-color: white;
+   
+}
+
+.img-container {
+
+    img{
+        height: 200px;
+    }
+}
