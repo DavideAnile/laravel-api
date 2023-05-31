@@ -16,4 +16,29 @@ class ProjectController extends Controller
             'results' => $projects,
         ]);
     }
+
+    public function show($slug){
+        
+        $project = Project::where('slug', $slug)->first();
+
+        if($project == null) {
+
+            return response()->json([
+
+                'success' => false,
+                'error' => 'Questo progetto non esiste!'
+            ]);
+        
+        } else {
+
+            return response()->json([
+                'success' => true,
+                'project' => $project, 
+            ]);
+
+        }
+
+    }
+
 }
+
